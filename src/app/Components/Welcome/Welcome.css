@@ -1,0 +1,12 @@
+.welcome-container {
+  align-content: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: green;
+}
+
+.welcome-box {
+  background-color: red;
+  height: 60vh;
+  border-radius: 5px;
+}
