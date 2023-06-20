@@ -15,7 +15,7 @@ export default function Home() {
         <Navbar />
         <Welcome />
         <PortfolioGallery />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </ParallaxProvider>
   );
