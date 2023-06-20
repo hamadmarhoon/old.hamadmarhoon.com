@@ -1,0 +1,74 @@
+.circleContainer {
+  display: flex;
+  right: -20px;
+  top: -20px;
+}
+
+.circleParent {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 1; /* Lower z-index so it appears beneath the footer content */
+  position: relative; /* Set to relative so the children's positioning is relative to this */
+  bottom: -50px; /* Adjust this to move the circles up or down */
+}
+
+.footerContent {
+  background-color: #6dcb76;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0; /* Align to the bottom of the footer */
+  right: 0; /* Align to the right of the footer */
+  z-index: 2; /* Higher z-index so it appears above the circles */
+  position: relative; /* Add this line to establish a new stacking context for z-index */
+}
+
+.outermost,
+.second,
+.third,
+.innermost {
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outermost {
+  background-color: #6dcb76;
+  width: 100px;
+  height: 100px;
+  margin-right: -25px;
+}
+
+.second {
+  background-color: #ffffff;
+  width: 80px;
+  height: 80px;
+}
+
+.third {
+  background-color: #93f991;
+  width: 60px;
+  height: 60px;
+}
+
+.innermost {
+  background-color: #c5ffaa;
+  width: 40px;
+  height: 40px;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  z-index: 5;
+}
+
+.footer a {
+  color: white; /* Color of link text */
+  text-decoration: none;
+  font-size: 1.2em;
+}

@@ -1,6 +1,10 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { Ubuntu_Mono } from "next/font/google";
+
+const roboto = Ubuntu_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Hamad Marhoon",
@@ -14,10 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="stylesheet" href="https://use.typekit.net/rjc5tfw.css" />
-      </head>
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
