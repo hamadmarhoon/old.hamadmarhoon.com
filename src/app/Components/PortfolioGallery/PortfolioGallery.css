@@ -1,0 +1,26 @@
+.portfolio-container {
+  width: 100vw;
+}
+
+.portfolio-items {
+  width: 70vw;
+  align-content: center;
+  justify-content: center;
+}
+
+.portfolio-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  align-items: center;
+  margin: 1vh;
+}
+
+.portfolio-web {
+  display: flex;
+  gap: 3vw;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 1vh;
+}

@@ -1,19 +1,40 @@
 "use client";
 
+import React, { useState } from "react";
 import "./Navbar.css";
-import Image from "next/image";
-import logo from "../../Images/Logo.png";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
+// Set up a responsive navbar that will collapse into a hamburger menu on smaller screens
 export default function Navbar() {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
-    <AppBar position="static" color="inherit" className="navbar">
-      <Toolbar>
-        <Image src={logo} alt="Logo" className="navbar-image-logo" />
-        <p className="navbar-title">Hamad Marhoon</p>
-      </Toolbar>
-    </AppBar>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a href="/" className="navbar-logo">
+          <h1 className="navbar-logo-text">Hamad Marhoon</h1>
+        </a>
+        <div className="menu-icon" onClick={() => setNavbarOpen(!navbarOpen)}>
+          {navbarOpen ? (
+            <CloseIcon className="close-icon" />
+          ) : (
+            <MenuIcon className="menu-icon" />
+          )}
+        </div>
+        <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
+          <li className="nav-item">
+            <a href="/" className="nav-links">
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/about" className="nav-links">
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }

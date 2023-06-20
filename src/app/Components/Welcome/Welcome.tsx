@@ -2,23 +2,19 @@
 
 import Grid from "@mui/material/Grid";
 import "./Welcome.css";
+import Image from "next/image";
+import Headshot from "../../Images/Logo.png";
 
 export default function Welcome() {
   return (
-    <Grid>
-      <Grid container className="welcome-container">
-        <Grid container lg={8} spacing={2}>
-          <Grid item lg={8}>
-            <div className="welcome-box">
-              <h1>Hamad Marhoon</h1>
-              <h2>Full Stack Mobile & Web Developer</h2>
-            </div>
-          </Grid>
-          <Grid item lg={4}>
-            <div className="welcome-box"></div>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
+    <div className="welcome-container">
+      <div className="welcome-box">
+        <Image src={Headshot} alt="Logo" className="welcome-headshot" />
+        <div className="welcome-text">
+          <p className="welcome-name">Hamad Marhoon</p>
+          <p className="welcome-tag">Full Stack Mobile & Web Developer</p>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -1,12 +1,41 @@
 .welcome-container {
+  display: flex;
   align-content: center;
   justify-content: center;
   height: 80vh;
-  background-color: green;
+  width: 100vw;
+  padding: 5vh;
 }
 
 .welcome-box {
-  background-color: red;
-  height: 60vh;
+  width: 70vw;
+  height: 70vh;
   border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-text {
+  padding: 5vw;
+}
+
+.welcome-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.welcome-headshot {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 0.01px solid rgb(199, 199, 199);
+}
+
+.welcome-tag {
+  font-size: 1.5rem;
+  font-weight: light;
 }
