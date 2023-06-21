@@ -15,8 +15,9 @@
 }
 
 .textContainer {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .itemLinkContainer {
@@ -35,8 +36,8 @@
   opacity: 0.69;
 }
 
-.portfolioContent {
-  width: 40%;
+.portfolioThinContent {
+  width: 100%;
 }
 
 .portfolioContent h2 {
@@ -51,7 +52,7 @@
 }
 
 .portfolioImageContainer {
-  width: 60%;
+  width: 100%;
   height: 100%;
   position: relative;
 }

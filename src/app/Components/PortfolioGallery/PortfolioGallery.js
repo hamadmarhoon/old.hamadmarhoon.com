@@ -43,17 +43,17 @@ export default function PortfolioGallery() {
         }}>
         <PortfolioThin
           link="https://www.truckly.io"
-          title="Truckly - Web"
+          title="Digital Black Religion"
           image={Truckly1}
-          description="A real-time food truck finder."
-          stack="REACT  •  FIREBASE  •  GOOGLE CLOUD"
+          description="Explore the contours of Black religion in the digital realm."
+          stack="REACT"
         />
         <PortfolioThin
           link="https://www.truckly.io"
-          title="Truckly - Web"
+          title="Discovering Community in the Borderlands"
           image={Truckly1}
-          description="A real-time food truck finder."
-          stack="REACT  •  FIREBASE  •  GOOGLE CLOUD"
+          description="Explore diverse Southern Arizona communities through Augmented Reality."
+          stack="REACT •  FIREBASE"
         />
       </div>
     </div>

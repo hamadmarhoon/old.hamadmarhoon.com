@@ -38,7 +38,7 @@ export default function PortfolioThin({
         transform: y.interpolate((v) => `translate3d(0, ${v / 20}px, 0)`),
       }}
       className={`portfolioThinItem`}>
-      <div className="portfolioContent">
+      <div className="portfolioThinContent">
         <div className="textContainer">
           <p className="itemTitle">{title}</p>
           <p className="itemStack">{stack}</p>

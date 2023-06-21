@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer() {
   const Circle = ({ index }) => {
@@ -28,7 +30,16 @@ export default function Footer() {
       <div className="circleParent">
         <div className="circleContainer">{circleGenerator()}</div>
       </div>
-      <div className="footerContent">Hello</div>
+      <div className="footerContent">
+        <a href="https://www.linkedin.com/in/hamad-marhoon/">
+          <LinkedInIcon style={{ width: "40px", height: "40px" }} />
+        </a>
+        <a href="https://github.com/hamadmarhoon">
+          <GitHubIcon
+            style={{ width: "40px", height: "40px", marginRight: "1vw" }}
+          />
+        </a>
+      </div>
 
       {/* s */}
     </div>
