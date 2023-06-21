@@ -1,6 +1,8 @@
 "use client";
 import "./PortfolioGallery.css";
 import PortfolioWide from "../PortfolioWide/PortfolioWide";
+import PortfolioThin from "../PortfolioThin/PortfolioThin";
+
 import Image from "next/image";
 
 import Truckly1 from "../../Images/Truckly-1.png";
@@ -9,9 +11,9 @@ import Truckly3 from "../../Images/Truckly-3.png";
 
 export default function PortfolioGallery() {
   return (
-    <div className="portfolio-container">
+    <div className="portfolio-container" id="portfolio">
       {/* <h1 style={{ marginLeft: "20vw" }}> 📱 MOBILE APPS</h1> */}
-      <div className="portfolio-mobile" style={{ height: "100vh" }}>
+      <div className="portfolio-mobile">
         <PortfolioWide
           link="truckly.io"
           title="Truckly - Consumer"
@@ -32,21 +34,27 @@ export default function PortfolioGallery() {
         />
       </div>
       {/* <h1 style={{ marginLeft: "20vw", marginTop: "5vh" }}> 🌐 WEB APPS</h1> */}
-      <div className="portfolio-web">
-        {/* <PortfolioItemHorizontal
-          link="truckly.io"
-          title="Truckly"
+      <div
+        className="portfolio-web"
+        style={{
+          marginTop: "10vh",
+          marginBottom: "10vh",
+          flexDirection: "row",
+        }}>
+        <PortfolioThin
+          link="https://www.truckly.io"
+          title="Truckly - Web"
           image={Truckly1}
-          description="Truckly"
-          stack="react"
+          description="A real-time food truck finder."
+          stack="REACT  •  FIREBASE  •  GOOGLE CLOUD"
         />
-        <PortfolioItemHorizontal
-          link="truckly.io"
-          title="Truckly"
+        <PortfolioThin
+          link="https://www.truckly.io"
+          title="Truckly - Web"
           image={Truckly1}
-          description="Truckly"
-          stack="react"
-        /> */}
+          description="A real-time food truck finder."
+          stack="REACT  •  FIREBASE  •  GOOGLE CLOUD"
+        />
       </div>
     </div>
   );

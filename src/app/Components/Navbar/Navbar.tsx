@@ -24,7 +24,14 @@ export default function Navbar() {
         </div>
         <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
           <li className="nav-item">
-            <a href="/" className="nav-links">
+            <a
+              href=""
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("portfolio");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="nav-links">
               Portfolio
             </a>
           </li>

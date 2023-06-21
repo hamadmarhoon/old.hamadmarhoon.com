@@ -1,0 +1,63 @@
+.portfolioThinItem {
+  display: flex;
+  width: 30vw;
+  height: 40vh;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  transition: box-shadow 0.3s;
+  background-color: #f1f1f1;
+}
+
+.portfolioItem:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+}
+
+.textContainer {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.itemLinkContainer {
+  margin-top: 5vh;
+  display: flex;
+  gap: 1vw;
+}
+
+.itemTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.itemStack {
+  font-size: 1rem;
+  opacity: 0.69;
+}
+
+.portfolioContent {
+  width: 40%;
+}
+
+.portfolioContent h2 {
+  font-size: 1.5rem;
+}
+
+.portfolioContent a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+.portfolioImageContainer {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.portfolioImageContainer > div {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+}
