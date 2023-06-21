@@ -31,10 +31,10 @@ export default function Footer() {
         <div className="circleContainer">{circleGenerator()}</div>
       </div>
       <div className="footerContent">
-        <a href="https://www.linkedin.com/in/hamad-marhoon/">
+        <a href="https://www.linkedin.com/in/hamad-marhoon/" target="_blank">
           <LinkedInIcon style={{ width: "40px", height: "40px" }} />
         </a>
-        <a href="https://github.com/hamadmarhoon">
+        <a href="https://github.com/hamadmarhoon" target="_blank">
           <GitHubIcon
             style={{ width: "40px", height: "40px", marginRight: "1vw" }}
           />
