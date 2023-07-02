@@ -35,7 +35,7 @@ export default function PortfolioThin({
   return (
     <animated.div
       style={{
-        transform: y.interpolate((v) => `translate3d(0, ${v / 20}px, 0)`),
+        transform: y.interpolate((v) => `translate3d(0, ${v / 50}px, 0)`),
       }}
       className={`portfolioThinItem`}>
       <div className="portfolioThinContent">

@@ -37,29 +37,25 @@ export default function PortfolioWide({
   return (
     <animated.div
       style={{
-        transform: y.interpolate((v) => `translate3d(0, ${v / 20}px, 0)`),
+        transform: y.interpolate((v) => `translate3d(0, ${v / 50}px, 0)`),
       }}
       className={`portfolioItem`}>
-      <div className="portfolioContent">
-        <div className="textContainer">
-          <p className="itemTitle">{title}</p>
-          <p className="itemStack">{stack}</p>
-          <br />
-          <br />
-          <p className="itemDescription">{description}</p>
-          <div className="itemLinkContainer">
-            <a href={appStoreLink} target="_blank">
-              <Image className="img-box" width={150} src={AppStoreLogo} />
-            </a>
-            <a href={playStoreLink} target="_blank">
-              <Image className="img-box" width={150} src={PlayStoreLogo} />
-            </a>
-          </div>
+      <div className="textContainer">
+        <p className="itemTitle">{title}</p>
+        <p className="itemStack">{stack}</p>
+        <br />
+        <br />
+        <p className="itemDescription">{description}</p>
+        <div className="itemLinkContainer">
+          <a href={appStoreLink} target="_blank">
+            <Image className="img-box" width={150} src={AppStoreLogo} />
+          </a>
+          <a href={playStoreLink} target="_blank">
+            <Image className="img-box" width={150} src={PlayStoreLogo} />
+          </a>
         </div>
       </div>
-      {/* <div className="portfolioImageContainer">
-        <Image src={image} alt={title} fill />
-      </div> */}
+      <div className="portfolioImageContainer"></div>
     </animated.div>
   );
 }

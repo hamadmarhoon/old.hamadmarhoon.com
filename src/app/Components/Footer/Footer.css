@@ -18,17 +18,15 @@
   background-color: #6dcb76;
   width: 100%;
   height: 50px;
-
   left: 0;
   bottom: 0; /* Align to the bottom of the footer */
   z-index: 2; /* Higher z-index so it appears above the circles */
   position: relative; /* Add this line to establish a new stacking context for z-index */
   justify-content: flex-end;
-  align-content: flex-end;
+  align-content: flex-end; 
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-
   gap: 10px;
 }
 

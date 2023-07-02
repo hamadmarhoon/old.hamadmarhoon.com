@@ -1,5 +1,6 @@
 .portfolioItem {
   display: flex;
+  flex-direction: row;
   width: 60vw;
   height: 40vh;
   border: 1px solid #ddd;
@@ -15,12 +16,9 @@
 }
 
 .textContainer {
-  margin-top: 20%;
-  margin-left: 10%;
-}
-
-.img-box {
-  width: 150px;
+  width: 30%;
+  height: 100%;
+  margin: 0;
 }
 
 .itemLinkContainer {
@@ -43,10 +41,6 @@
   opacity: 0.69;
 }
 
-.portfolioContent {
-  width: 40%;
-}
-
 .portfolioContent h2 {
   font-size: 1.5rem;
 }
@@ -59,13 +53,5 @@
 }
 
 .portfolioImageContainer {
-  width: 60%;
-  height: 100%;
-  position: relative;
-}
-
-.portfolioImageContainer > div {
-  position: relative !important;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
 }
