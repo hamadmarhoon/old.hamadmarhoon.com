@@ -3,7 +3,7 @@
 import Grid from "@mui/material/Grid";
 import "./Welcome.css";
 import Image from "next/image";
-import Headshot from "../../Images/headshot.jpeg";
+import Headshot from "../../Images/headshot.jpg";
 
 export default function Welcome() {
   return (
