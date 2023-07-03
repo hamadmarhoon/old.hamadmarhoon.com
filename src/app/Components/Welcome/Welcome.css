@@ -32,6 +32,7 @@
   height: 30vh;
   border-radius: 50%;
   border: 0.01px solid rgb(199, 199, 199);
+  object-fit: cover;
 }
 
 .welcome-tag {
