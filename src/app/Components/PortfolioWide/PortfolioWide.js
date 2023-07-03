@@ -51,7 +51,12 @@ export default function PortfolioWide({
             <Image className="img-box" width={150} src={AppStoreLogo} />
           </a>
           <a href={playStoreLink} target="_blank">
-            <Image className="img-box" width={150} src={PlayStoreLogo} />
+            <Image
+              className="img-box"
+              width={150}
+              src={PlayStoreLogo}
+              alt="Play Store Download Button "
+            />
           </a>
         </div>
       </div>

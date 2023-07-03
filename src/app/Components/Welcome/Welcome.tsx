@@ -9,7 +9,7 @@ export default function Welcome() {
   return (
     <div className="welcome-container">
       <div className="welcome-box">
-        <Image src={Headshot} alt="Logo" className="welcome-headshot" />
+        <Image src={Headshot} alt="Headshot" className="welcome-headshot" />
         <div className="welcome-text">
           <p className="welcome-name">Hamad Marhoon</p>
           <p className="welcome-tag">Full Stack Mobile & Web Developer</p>

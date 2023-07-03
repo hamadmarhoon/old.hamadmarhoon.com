@@ -25,10 +25,18 @@ function PhonePortfolio({
           <p className="itemDescription">{description}</p>
           <div className="downloadLinks">
             <a href={playStoreLink} target="_blank" className="downloadButton">
-              <Image src={PlayStoreLogo} width={120} />
+              <Image
+                src={PlayStoreLogo}
+                width={120}
+                alt="Play Store Download Button "
+              />
             </a>
             <a href={appStoreLink} target="_blank" className="downloadButton">
-              <Image src={AppStoreLogo} width={120} />
+              <Image
+                alt="App Store Download Button "
+                src={AppStoreLogo}
+                width={120}
+              />
             </a>
           </div>
         </div>
