@@ -23,10 +23,10 @@
   z-index: 2; /* Higher z-index so it appears above the circles */
   position: relative; /* Add this line to establish a new stacking context for z-index */
   justify-content: flex-end;
-  align-content: flex-end; 
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   gap: 10px;
 }
 
@@ -76,5 +76,25 @@
 .footer a {
   color: white; /* Color of link text */
   text-decoration: none;
-  font-size: 1.2em;
+}
+
+@media screen and (max-width: 767px) {
+  .outermost {
+    width: 80px;
+    height: 80px;
+  }
+
+  .second {
+    width: 70px;
+    height: 70px;
+  }
+
+  .third {
+    width: 60px;
+    height: 60px;
+  }
+  .innermost {
+    width: 50px;
+    height: 50px;
+  }
 }

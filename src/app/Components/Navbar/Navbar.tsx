@@ -15,14 +15,14 @@ export default function Navbar() {
         <a href="/" className="navbar-logo">
           <h1 className="navbar-logo-text">Hamad Marhoon</h1>
         </a>
-        <div className="menu-icon" onClick={() => setNavbarOpen(!navbarOpen)}>
+        {/* <div className="menu-icon" onClick={() => setNavbarOpen(!navbarOpen)}>
           {navbarOpen ? (
             <CloseIcon className="close-icon" />
           ) : (
             <MenuIcon className="menu-icon" />
           )}
-        </div>
-        <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
+        </div> */}
+        {/* <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
           <li className="nav-item">
             <a
               href=""
@@ -35,12 +35,12 @@ export default function Navbar() {
               Portfolio
             </a>
           </li>
-          <li className="nav-item">
-            {/* <a href="/about" className="nav-links">
+          <li className="nav-item"> */}
+        {/* <a href="/about" className="nav-links">
               Resume
             </a> */}
-          </li>
-        </ul>
+        {/* </li>
+        </ul> */}
       </div>
     </nav>
   );

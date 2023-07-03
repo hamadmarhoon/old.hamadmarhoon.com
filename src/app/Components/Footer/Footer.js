@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Footer() {
   const Circle = ({ index }) => {
@@ -31,13 +32,17 @@ export default function Footer() {
         <div className="circleContainer">{circleGenerator()}</div>
       </div>
       <div className="footerContent">
-        <a href="https://www.linkedin.com/in/hamad-marhoon/" target="_blank">
-          <LinkedInIcon style={{ width: "40px", height: "40px" }} />
+        <a
+          href="https://www.linkedin.com/in/hamad-marhoon/"
+          target="_blank"
+          className="icon-link">
+          <BsLinkedin fontSize={40} />
         </a>
-        <a href="https://github.com/hamadmarhoon" target="_blank">
-          <GitHubIcon
-            style={{ width: "40px", height: "40px", marginRight: "1vw" }}
-          />
+        <a
+          href="https://github.com/hamadmarhoon"
+          target="_blank"
+          className="icon-link">
+          <BsGithub fontSize={40} style={{ margin: "5px" }} />
         </a>
       </div>
 

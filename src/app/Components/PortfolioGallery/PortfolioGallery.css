@@ -9,8 +9,17 @@
 .portfolio-mobile {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 3vw;
   width: 60vw;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5vh;
 }
 
 .portfolio-web {
@@ -20,4 +29,23 @@
   align-content: center;
   justify-content: center;
   width: 60vw;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-mobile {
+    width: 95vw;
+  }
+  .portfolio-web {
+    width: 95vw;
+  }
+
+  .phone-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .phone-container {
+    flex-direction: column;
+  }
 }
