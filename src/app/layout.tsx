@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Ubuntu_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Ubuntu_Mono({
   weight: "400",
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }
