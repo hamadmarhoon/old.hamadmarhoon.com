@@ -15,15 +15,15 @@ export default function Navbar() {
         <a href="/" className="navbar-logo">
           <h1 className="navbar-logo-text">Hamad Marhoon</h1>
         </a>
-        {/* <div className="menu-icon" onClick={() => setNavbarOpen(!navbarOpen)}>
+        <div className="menu-icon" onClick={() => setNavbarOpen(!navbarOpen)}>
           {navbarOpen ? (
             <CloseIcon className="close-icon" />
           ) : (
             <MenuIcon className="menu-icon" />
           )}
-        </div> */}
-        {/* <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
-          <li className="nav-item">
+        </div>
+        <ul className={`nav-menu ${navbarOpen ? " showMenu" : ""}`}>
+          <li className="nav-item" id="portfolio-direct">
             <a
               href=""
               onClick={(e) => {
@@ -35,12 +35,16 @@ export default function Navbar() {
               Portfolio
             </a>
           </li>
-          <li className="nav-item"> */}
-        {/* <a href="/about" className="nav-links">
+          <li className="nav-item">
+            <a
+              href="/Hamad_Marhoon_Resume.pdf" // this URL maps to the public directory
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-links">
               Resume
-            </a> */}
-        {/* </li>
-        </ul> */}
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -5,12 +5,9 @@ import PortfolioThin from "../PortfolioThin/PortfolioThin";
 import PhonePortfolio from "../PhonePortfolio/PhonePortfolio";
 import WebPortfolio from "../WebPortfolio/WebPortfolio";
 import Image from "next/image";
-
-import TrucklyGif from "../../Images/output.gif";
-import DBRGif from "../../Images/DBR-Gif.gif";
-import DCBGif from "../../Images/DCB-Gif.gif";
 import DBRShot from "../../Images/DBRShot.png";
 import DCBShot from "../../Images/DCBShot.png";
+import AMShot from "../../Images/AMShot.png";
 import TrucklyShot from "../../Images/TrucklyShot.png";
 import TrucklyVendorShot from "../../Images/TrucklyVendorShot.png";
 
@@ -49,6 +46,13 @@ export default function PortfolioGallery() {
             gap: "3vw",
             alignItems: "center",
           }}>
+          <WebPortfolio
+            gif={AMShot}
+            link="https://ancient-to-modern.arizona.edu"
+            title="Ancient to Modern"
+            description="Explore American Southwestern Jewelry"
+            stack="REACT • JAVASCRIPT • HTML/CSS"
+          />
           <WebPortfolio
             gif={DBRShot}
             link="https://digitalblackreligion.web.app"

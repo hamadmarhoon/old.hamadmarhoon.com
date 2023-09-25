@@ -12,7 +12,7 @@ export default function Welcome() {
         <Image src={Headshot} alt="Headshot" className="welcome-headshot" />
         <div className="welcome-text">
           <p className="welcome-name">Hamad Marhoon</p>
-          <p className="welcome-tag">Full Stack Mobile & Web Developer</p>
+          <p className="welcome-tag">Mobile & Web Developer</p>
         </div>
       </div>
     </div>
